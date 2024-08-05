@@ -11,6 +11,7 @@ const Navbar = () => {
     const { user, dispatch } = useContext(AuthContext)
     const handleClick = async () => {
         dispatch({ type: "LOGOUT" });
+        localStorage.removeItem("user")
     }
 
     return (
