@@ -1,0 +1,71 @@
+.viewItem {
+    border: 1px solid darkred;
+    box-shadow: 0 4px 8px 0 silver, 0 6px 20px 0 silver;
+    background-color: rgb(239, 232, 232);
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    gap: 5px;
+}
+
+.details {
+    background-color: rgba(99, 63, 63, 0.392);
+    border-radius: 50px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 130px;
+}
+
+.details .name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.details .type {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cream);
+}
+
+.details .part {
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.time {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-red);
+}
+
+.cat {
+    background-color: rgba(255, 228, 196, 0.523);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.link {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--red);
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: var(--dark-red);
+}

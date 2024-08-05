@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navContainer {
+    position: sticky;
+    top: 0;
+    background-color: var(--dark-red);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.navLogo {
+    color: white;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    float: left;
+    width: 70px;
+}
+
+.navbar ul li a {
+    font-size: 17px;
+    padding: 5px;
+    color: white;
+    transition: all 0.5s;
+    display: block;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: darkred;
+}
+.navbar ul a.active {
+    background-color: white;
+    color: darkred;
+}
+.navbar ul li img {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.navContainer label {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:800px) {
+    .navContainer {
+        height: 70px;
+    }
+
+    .navContainer label {
+        display: initial;
+    }
+
+    .navContainer .navbar {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        background: white;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: block;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        color: black;
+    }
+
+    .navbar ul li a:hover {
+        transform: translateY(-1px);
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    #menu-bar:checked~.navbar {
+        left: 0;
+    }
+}

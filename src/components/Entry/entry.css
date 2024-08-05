@@ -1,0 +1,27 @@
+.entryItem {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 228, 196, 0.523);
+    border: 1px solid rgba(193, 173, 148, 0.523);
+    box-shadow: 0 4px 8px 0 rgba(193, 173, 148, 0.523), 0 6px 20px 0 rgba(193, 173, 148, 0.523);
+}
+
+.entryItem h1 {
+    background-color: var(--dark-red);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.entryItem .mealsContainer .mealItem {
+    background-color: var(--cream);
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}

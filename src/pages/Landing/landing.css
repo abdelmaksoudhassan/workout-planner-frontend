@@ -1,0 +1,42 @@
+.upper-layer {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(310deg, rgba(236, 96, 89, 1) 0%,
+            rgba(255, 218, 126, 1) 28%, rgba(255, 94, 74, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-layer h1 {
+    background-color: rgba(160, 46, 46, 0.448);
+    color: azure;
+    text-align: center;
+    padding: 20px;
+}
+
+.upper-layer h1 span {
+    color: white;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-style: italic;
+    font-weight: 900;
+    padding: 5px;
+}
+
+.btn-get-started {
+    background-color: var(--dark-red);
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    padding: 15px 25px;
+    font-family: "Dosis", sans-serif;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+    scale: 1.1 1.1;
+}
